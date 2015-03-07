@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet var mainView: UIView!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var textField: UITextField!
+    
+    var chat = ["Hallo Gideon!", "Hier een paar testregels", "Voor de chat :D"]
 
     var keyboardOpen = false
     
@@ -25,7 +27,6 @@ class ViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardClosing:", name: UIKeyboardWillHideNotification, object: nil)
         
     }
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -42,6 +43,9 @@ class ViewController: UIViewController {
         })
     }
     
+    
+    
+    
     func keyboardClosing(notification: NSNotification) {
         keyboardOpen = false
         
@@ -56,11 +60,25 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func sendMessage(sender: UIBarButtonItem) {
+
+    @IBAction func send(sender: UIBarButtonItem) {
         if(textField.text != ""){
             println("Send: " + textField.text);
         }
     }
     
+    func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int
+    {
+        return self.chat.count;
+    }
+    
+    func tableView(tableView: UITableView!,
+        cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell!
+    {
+        let cell: UITableViewCell = UITableViewCell(style:UITableViewCellStyle.Default, reuseIdentifier:"cell")
+        cell.textLabel?.text = chat[indexPath.row]
+        
+        return cell
+    }
 }
 

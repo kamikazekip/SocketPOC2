@@ -13,6 +13,7 @@
 		CE1E0BA21AA789A20061F4FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1E0BA11AA789A20061F4FA /* Images.xcassets */; };
 		CE1E0BA51AA789A20061F4FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1E0BA31AA789A20061F4FA /* LaunchScreen.xib */; };
 		CE1E0BB11AA789A20061F4FA /* SocketPOC2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1E0BB01AA789A20061F4FA /* SocketPOC2Tests.swift */; };
+		CE94863E1AAB51F6005FFA24 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE94863D1AAB51F6005FFA24 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		CE1E0BAA1AA789A20061F4FA /* SocketPOC2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketPOC2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1E0BAF1AA789A20061F4FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE1E0BB01AA789A20061F4FA /* SocketPOC2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketPOC2Tests.swift; sourceTree = "<group>"; };
+		CE94863D1AAB51F6005FFA24 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		CE1E0B971AA789A20061F4FA /* SocketPOC2 */ = {
 			isa = PBXGroup;
 			children = (
+				CE94863D1AAB51F6005FFA24 /* Default-568h@2x.png */,
 				CE1E0B9A1AA789A20061F4FA /* AppDelegate.swift */,
 				CE1E0B9C1AA789A20061F4FA /* ViewController.swift */,
 				CE1E0B9E1AA789A20061F4FA /* Main.storyboard */,
@@ -194,6 +197,7 @@
 			files = (
 				CE1E0BA01AA789A20061F4FA /* Main.storyboard in Resources */,
 				CE1E0BA51AA789A20061F4FA /* LaunchScreen.xib in Resources */,
+				CE94863E1AAB51F6005FFA24 /* Default-568h@2x.png in Resources */,
 				CE1E0BA21AA789A20061F4FA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +413,7 @@
 				CE1E0BB61AA789A20061F4FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE1E0BB71AA789A20061F4FA /* Build configuration list for PBXNativeTarget "SocketPOC2Tests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				CE1E0BB91AA789A20061F4FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
